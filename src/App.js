@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import Input from './components/Input'
+import TodoList from './components/TodoList'
+import Filter from './components/Filter'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <H1> TodoLuby </H1>
+      <Input />
+      <Filter />
+      <TodoList />
+    </Wrapper>
   );
 }
+
+const H1 = styled.h1`
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+`;
+
+const Wrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  margin-top: 5rem; 
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  font-family: 'Roboto Mono', monospace;
+`;
+
 
 export default App;

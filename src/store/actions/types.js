@@ -1,0 +1,5 @@
+export const ADD_TASK = 'add_task'
+export const CHANGE_STATUS = 'change_status'
+export const ACTIVE_TASKS = 'active_tasks'
+export const INACTIVE_TASKS = 'inactive_tasks'
+export const ALL_TASKS = 'all_tasks'
